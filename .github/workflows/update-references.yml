@@ -1,10 +1,11 @@
 name: Update version references
 
-on:
-  push:
-    tags:
-      - "v*"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     tags:
+#       - "v*"
+# 
 permissions:
   contents: write
 

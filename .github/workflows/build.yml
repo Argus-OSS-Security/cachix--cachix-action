@@ -1,11 +1,12 @@
 name: "Build"
 
-on:
-  pull_request:
-  push:
-    branches:
-      - master
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   push:
+#     branches:
+#       - master
+# 
 jobs:
   build:
     runs-on: ubuntu-latest

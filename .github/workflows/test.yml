@@ -1,19 +1,20 @@
 name: "Test"
 
-on:
-  workflow_call:
-    inputs:
-      install_url:
-        description: "Nix installation URL, e.g. https://releases.nixos.org/nix/nix-2.33.3/install"
-        required: false
-        type: string
-  workflow_dispatch:
-    inputs:
-      install_url:
-        description: "Nix installation URL, e.g. https://releases.nixos.org/nix/nix-2.33.3/install"
-        required: false
-        type: string
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_call:
+#     inputs:
+#       install_url:
+#         description: "Nix installation URL, e.g. https://releases.nixos.org/nix/nix-2.33.3/install"
+#         required: false
+#         type: string
+#   workflow_dispatch:
+#     inputs:
+#       install_url:
+#         description: "Nix installation URL, e.g. https://releases.nixos.org/nix/nix-2.33.3/install"
+#         required: false
+#         type: string
+# 
 jobs:
   public-cache:
     strategy:
